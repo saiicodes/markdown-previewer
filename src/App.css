@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(226 232 240 / 1);
+  width: auto;
+  height: 100vh;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width: 768px) {
+  .md-container {
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  display: block;
+  background-color: rgb(255 255 255 / 1);
+  width: 100%;
+  height: auto;
+  padding: 0.75rem;
+  margin-top: 4rem;
+  border-radius: 0.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .md-card {
+    width: 850px;
+    height: 450px;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .lg-card {
+    padding: 2.5rem;
+  }
+}
+
+/* TITLE */
+.title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(0 0 0 / 1);
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  width: 100%; 
+}
+
+.title {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  .lg-title-box {
+    font-size: 1rem;
+  }
+
+  .lg-title {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.editor {
+  width: 100%;
+  height: 230px;
+  background-color: rgb(226 232 240 / 1);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding: 0.5rem;
+  overflow: auto;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+}
+
+.previewer {
+  width: 100%;
+  height: 230px;
+  background-color: rgb(226 232 240 / 1);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding: 0.5rem;
+  overflow: auto;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .md-editor {
+  height: 370px;
+  }
+
+  .md-previewer { 
+  height: 370px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .lg-editor {
+  height: 370px;
+  }
+
+  .lg-previewer { 
+  height: 370px;
+  }
+}
+
+.edit-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 1024px) {
+  .lg-edit-container {
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (min-width: 1024px) {
+  .editor-container {
+  width: 45%
+  }
+
+  .previewer-container {
+  width: 45%
   }
 }
